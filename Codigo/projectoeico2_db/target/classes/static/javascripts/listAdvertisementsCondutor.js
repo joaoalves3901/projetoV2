@@ -23,7 +23,8 @@ function showAds(anuncios) {
     let html = "";
     for (let anuncio of anuncios) {
         html += "<section onclick='showAd(" + anuncio.id + ")'>" +
-            "<h3>" + anuncio.tipo + "</h3>" +
+            "<h2>" + anuncio.tipo + "</h2>" +
+            "<h3> Preco: " + anuncio.preco + " &euro;</h3>" +
             "<p> Anunciante: " + anuncio.cliente.nome + "</p></section>";
     }
     elemMain.innerHTML = html;

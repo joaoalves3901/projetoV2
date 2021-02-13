@@ -12,6 +12,8 @@ window.onload = async function() {
     document.getElementById("origem").innerHTML = anuncio.origem;
     document.getElementById("tipo").innerHTML = anuncio.tipo;
     document.getElementById("peso").innerHTML = anuncio.peso;
+    document.getElementById("preco").innerHTML = anuncio.preco;    
+
 }
 
 async function acceptAdvertisement() {
@@ -32,7 +34,7 @@ async function acceptAdvertisement() {
         });
         console.log(JSON.stringify(result));
         // Change to album page
-        sessionStorage.setItem("id",result.id);
+                                                                                        sessionStorage.setItem("id",result.id);
         window.location = "indexCondutor.html";
     } catch(err) {
         console.log(err);

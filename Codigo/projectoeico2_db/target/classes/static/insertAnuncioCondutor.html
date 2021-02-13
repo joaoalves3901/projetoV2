@@ -13,7 +13,7 @@
     <header> Adicionar Anuncio </header>
     <main>
         <h2>Origem:
-            <select id="origem">
+            <select id="origem" required>
                 <option value="Lisboa">Lisboa</option>
                 <option value="Porto">Porto</option>
                 <option value="Leiria">Leiria</option>
@@ -24,7 +24,7 @@
             </select>
         </h2>
         <h3>Tipo:
-            <select id="tipopost">
+            <select id="tipopost" required>
                     <option value="Vidro">Vidro</option>
                     <option value="Plastico">Plastico</option>
                     <option value="Indiferenciado">Indiferenciado</option>
@@ -32,7 +32,8 @@
                     <option value="Metal">Metal</option>
             </select>
         </h3>
-        <h2>Peso: <input type="number" id="peso" min="0" max="10000"></h2>
+        <h2>Peso: <input type="number" id="peso" min="0" max="10000" required>Kg</h2>
+        <h2 id="preco">Preço: <span class="jsValue"></span>&euro;</h2>
         <h2><input type="button" value="Adicionar" onclick="addAnuncio()"></h2>
     </main>
     <footer> © TrashApp 2021 </footer>

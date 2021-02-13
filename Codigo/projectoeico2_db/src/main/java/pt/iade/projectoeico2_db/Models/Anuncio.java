@@ -25,6 +25,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
             @Column(name="anuncio_origem") private String origem;
             @Column(name="anuncio_tipo") private String tipo;
             @Column(name="anuncio_peso") private int peso;
+            @Column(name="anuncio_preco") private float preco;
 
             public Anuncio() {}
 
@@ -46,5 +47,10 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
             public int getPeso() {
                 return peso;
+            }
+
+            
+            public float getPreco() {
+                return preco;
             }
     }

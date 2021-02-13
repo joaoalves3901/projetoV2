@@ -30,8 +30,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 			
 			public Cliente() {}
 
-			
-
 			public String getNome() {
 				return nome;
 			}

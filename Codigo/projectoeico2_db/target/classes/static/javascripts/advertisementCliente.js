@@ -12,4 +12,6 @@ window.onload = async function() {
     document.getElementById("origem").innerHTML = anuncio.origem;
     document.getElementById("tipo").innerHTML = anuncio.tipo;
     document.getElementById("peso").innerHTML = anuncio.peso;
+    document.getElementById("preco").innerHTML = anuncio.preco;
+
 }

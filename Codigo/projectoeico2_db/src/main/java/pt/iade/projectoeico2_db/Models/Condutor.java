@@ -26,8 +26,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
             public Condutor() {}
 
-         
-
             public Cliente getCliente() {
                 return cliente;
             }
