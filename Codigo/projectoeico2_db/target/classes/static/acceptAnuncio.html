@@ -1,0 +1,35 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Anuncio</title>
+        <link rel="stylesheet" href="stylesheets/index.css">
+        <link rel="stylesheet" href="stylesheets/advertisement.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="javascripts/acceptAnuncio.js"></script>
+    </head>
+    
+    <body>
+        <main>
+            <h2>Anunciante: <span id="cliente"> </span> </h2><br> 
+            <h3>Origem: <span id="origem"> </span></h2>
+            <h3>Tipo: <span id="tipo"> </span></h2>
+            <h3>Peso: <span id="peso"> </span></h3>
+            <h3>Escolha o destino:
+                <select id="destino">
+                    <option value="Suldouro">Suldouro</option>
+                    <option value="Valorlis">Valorlis</option>
+                    <option value="Amarsul">Amarsul</option>
+                    <option value="Tratolixo">Tratolixo</option>
+                </select>
+            </h2>
+    
+            <br> <br>
+    
+            <input type="button" value="Confirmar" onclick="acceptAdvertisement()">
+        </main>
+    
+        <footer> © TrashApp 2021 </footer>
+    </body>
+    
+    </html>

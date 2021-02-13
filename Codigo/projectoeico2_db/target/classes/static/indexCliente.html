@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>DeliveryApp</title>
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="javascripts/listAdvertisementsCliente.js"></script>
+</head>
+
+<body>
+    <header> Lista de Anúncios </header>
+
+    <nav>
+        <a href="insertAnuncioCliente.html">Adicionar Anúncio</a>
+    </nav>
+
+    <section>
+        <h2>Tipo:
+            <select id="tipo">
+                <option value="Vidro">Vidro</option>
+                <option value="Plastico">Plastico</option>
+                <option value="Indiferenciado">Indiferenciado</option>
+                <option value="Papel">Papel</option>
+                <option value="Metal">Metal</option>
+            </select>
+        </h2>
+        <input type="button" value="Filtrar" onclick="filterTipo()">
+        <br> <br>
+        <input type="button" value="Mostrar Todos" onclick="loadAdvertisements()">
+
+
+    </section>
+
+    <main id="main">
+
+    </main>
+
+    <footer> © TrashApp 2021 </footer>
+</body>
+
+</html>

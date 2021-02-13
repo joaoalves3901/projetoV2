@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inserir Anuncio</title>
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <link rel="stylesheet" href="stylesheets/advertisement.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="javascripts/insertAdvertisementCondutor.js"></script>
+</head>
+
+<body>
+    <header> Adicionar Anuncio </header>
+    <main>
+        <h2>Origem:
+            <select id="origem">
+                <option value="Lisboa">Lisboa</option>
+                <option value="Porto">Porto</option>
+                <option value="Leiria">Leiria</option>
+                <option value="Faro">Faro</option>
+                <option value="Beja">Beja</option>
+                <option value="Viseu">Viseu</option>
+                <option value="Braga">Braga</option>
+            </select>
+        </h2>
+        <h3>Tipo:
+            <select id="tipopost">
+                    <option value="Vidro">Vidro</option>
+                    <option value="Plastico">Plastico</option>
+                    <option value="Indiferenciado">Indiferenciado</option>
+                    <option value="Papel">Papel</option>
+                    <option value="Metal">Metal</option>
+            </select>
+        </h3>
+        <h2>Peso: <input type="number" id="peso" min="0" max="10000"></h2>
+        <h2><input type="button" value="Adicionar" onclick="addAnuncio()"></h2>
+    </main>
+    <footer> © TrashApp 2021 </footer>
+</body>
+
+</html>

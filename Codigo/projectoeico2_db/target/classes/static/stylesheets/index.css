@@ -1,0 +1,35 @@
+header, main, footer, main section, nav {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+a { 
+    color: white;
+}
+
+nav {
+    background-color: rgb(17, 71, 17);
+}
+
+header {
+    background-color: rgb(17, 71, 17);
+}
+
+main {
+    background-color: rgb(71, 131, 71);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: rgb(17, 71, 17);
+}
+
+main > section {
+    cursor: pointer; 
+    border-radius: 15px;
+    background-color: rgb(17, 71, 17);
+    width: 18%;
+}
