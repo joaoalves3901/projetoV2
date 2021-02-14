@@ -6,7 +6,7 @@ window.onload = async function() {
         method: "get",
         dataType: "json"
     });
-    console.log("AD COND " + anuncio);
+    console.log(anuncio);
 
     document.getElementById("cliente").innerHTML = anuncio.cliente.nome;
     document.getElementById("origem").innerHTML = anuncio.origem;

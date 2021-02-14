@@ -34,7 +34,7 @@ async function acceptAdvertisement() {
         });
         console.log(JSON.stringify(result));
         // Change to album page
-                                                                                        sessionStorage.setItem("id",result.id);
+        sessionStorage.setItem("id",result.id);
         window.location = "indexCondutor.html";
     } catch(err) {
         console.log(err);
